@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Rendelés</title>
+</head>
+<body>
+    <h1>Rendelési űrlap</h1>
+    <form method="POST">
+        <label>Név:</label><br>
+        <input type="text" name="name"  required><br>
+       
+        <h2>Számlázási cím</h2>
+        <label>Ország:</label><br>
+        <input type="text" name="billingAddress[country]"  required><br>
+        <label>Irányítószám:</label><br>
+        <input type="text" name="billingAddress[postalCode]"  required><br>
+        <label>Város:</label><br>
+        <input type="text" name="billingAddress[city]"  required><br>
+        <label>Utca és házszám:</label><br>
+        <input type="text" name="billingAddress[street]" required><br>
+ 
+        <h2>Szállítási cím</h2>
+        <label>Ország:</label><br>
+        <input type="text" name="shippingAddress[country]"  required><br>
+        <label>Irányítószám:</label><br>
+        <input type="text" name="shippingAddress[postalCode]" required><br>
+        <label>Város:</label><br>
+        <input type="text" name="shippingAddress[city]"  required><br>
+        <label>Utca és házszám:</label><br>
+        <input type="text" name="shippingAddress[street]"  required><br>
+ 
+        <label>Kuponkód (opcionális):</label><br>
+        <input type="text" name="couponCode" ><br>
+ 
+        <h2>Fizetési eszköz</h2>
+        <label>Bankkártya szám:</label><br>
+        <input type="text" name="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" required><br>
+        <label>Lejárati dátum:</label><br>
+        <input type="text" name="expiryDate" placeholder="HH/ÉÉ" required><br>
+        <label>Biztonsági kód:</label><br>
+        <input type="text" name="securityCode" placeholder="XXX" required><br><br>
+ 
+        <button type="submit">Rendelés küldése</button><br>
+    </form>
+</body>
+</html>
+  
